@@ -1,19 +1,51 @@
 # lucky-audience
+```
+上午：今天中午吃什么？
 
-## Project setup
+下午：今天晚上吃什么？
+
+晚上：今天宵夜吃什么？
+```
+
+对于选择困难症来说，选择吃什么也太纠结了！
+
+```
+张三你做任务一吧？
+
+李四你想做任务二吗？
+
+王五你申请做任务三？
+```
+
+在任务分工的时候，给谁分什么任务也太难决定了！
+
+不如就将这一切都交给上天，随机选择，放手一搏。
+
+## 今天吃什么？（单层转盘）
+主页面点击“活”字，可以看见吃什么的页面。点击新增选项会弹出要填写的内容。
+
+不同的选项有对应的选项值，填写好信息之后，点击按钮”生成转盘“，会根据选项值的大小生成转盘。
+
+然后点击转盘，会随机转动并得到最终结果。
+
+![image](https://github.com/once-wang/lucky-audience/blob/gh-pages/%E5%90%83%E4%BB%80%E4%B9%88.PNG)
+
+
+## 工作分配（双层转盘）
+运行逻辑和单层转盘是一样的，但这里没有设置选项值，为保证分工平均，所有人和任务的权重都是相同的。
+
+输入人员名字和任务名字之后，点击生成转盘，首先会打乱输入顺序生成随机的转盘内外圈，然后点击转盘，会开始任务抽奖分配。
+
+![image](https://github.com/once-wang/lucky-audience/blob/gh-pages/%E5%B7%A5%E4%BD%9C%E5%88%86%E9%85%8D.PNG)
+
+
+## 项目运行
+下载依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+运行项目
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
